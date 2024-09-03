@@ -1,0 +1,24 @@
+<ion-item class="custom-input">
+  <!-- *ngIf es si existe la valiable icon -->
+  <ion-icon color="light" *ngIf="icon" slot="start" [name]="icon"></ion-icon>
+
+  
+  <!-- <ion-input 
+    [type]="type" 
+    [autocomplete]="autocomplete"
+    [formControl]="control"
+    [label]="label"
+    ></ion-input> -->
+    <ion-item>
+      <ion-input
+        [type]="type"
+        [autocomplete]="autocomplete"
+        [formControl]="control"
+        labelPlacement="floating"
+        placeholder="{{ label }}">
+      </ion-input>
+    </ion-item>
+    
+    
+
+</ion-item>

@@ -1,0 +1,40 @@
+<app-header title="Login"></app-header>
+
+<ion-content>
+
+  <form [formGroup]="form" class="full-height">
+    
+    <!-- <app-custom-input 
+      autocomplete="email"
+      icon="mail-outline"
+      [control]="form.controls.email"
+      type="email"
+      label="Correo"
+      label-placement="floating">
+    </app-custom-input>
+
+    <app-custom-input 
+      icon="lock-closed-outline"
+      [control]="form.controls.password"
+      type="password"
+      label="Contraseña">
+    </app-custom-input> -->
+
+    <ion-item>
+      <ion-label position="floating">Correo</ion-label>
+      <ion-input type="email" formControlName="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+    
+
+    <div class="button-container">
+      <ion-button expand="block" fill="solid" (click)="handleLogin()">Iniciar Sesión</ion-button>
+      <ion-button expand="block" fill="solid" (click)="handleRegister()">Registrarse</ion-button>
+    </div>
+
+  </form>
+</ion-content>

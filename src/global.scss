@@ -35,3 +35,29 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+:root {
+    --ion-background-color: #000000; /* Fondo oscuro */
+    --ion-text-color: #ffffff; /* Texto claro */
+  }
+  
+  body {
+    background-color: var(--ion-background-color);
+    color: var(--ion-text-color);
+  }
+  
+  ion-content {
+    --background: var(--ion-background-color);
+  }
+  
+  ion-button {
+    background-color: var(--ion-color-primary); /* O el color que prefieras para los botones */
+    color: var(--ion-color-primary-contrast); /* Color del texto de los botones */
+  }
+  
+
+//   body {
+//     color-scheme: dark;
+//     background-color: #000;
+//   }
+  

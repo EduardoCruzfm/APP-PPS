@@ -1,0 +1,19 @@
+ion-button {
+    background-color: blue;
+  }
+
+  .full-height {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .input-container {
+    flex: 1; /* Toma el espacio disponible */
+  }
+  
+  .button-container {
+    margin-top: auto; /* Empuja los botones hacia abajo */
+    padding-bottom: 20px; /* Añade un poco de espacio inferior si es necesario */
+  }
+  
